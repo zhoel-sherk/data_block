@@ -3,15 +3,15 @@
 # Auto-refreshed by blockcheckS IP pinning; hand-editable.
 104.18.10.118	cloudflare-ech.com
 162.159.137.232	discord.com
-162.159.135.234	discord.gg
-162.159.133.233	discordapp.com
-162.159.137.233	discordcdn.com
-142.251.38.100	googleapis.com
-216.58.207.100	googlevideo.com
-142.251.38.110	play.google.com
+162.159.133.234	discord.gg
+162.159.129.233	discordapp.com
+162.159.128.234	discordcdn.com
+172.217.19.228	googleapis.com
+172.217.19.228	googlevideo.com
+216.58.201.238	play.google.com
 193.0.11.51	ripe.net
 104.18.11.47	signal.org
-151.101.130.219	speedtest.net
-142.251.38.110	youtu.be
+151.101.194.219	speedtest.net
+216.58.207.110	youtu.be
 142.251.142.238	youtube.com
 172.217.116.4	youtubei.googleapis.com
