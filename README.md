@@ -15,4 +15,7 @@ providers/<provider>/
 ```
 
 Провайдер определяется автоматически по `org` из ipinfo.io
-(например `AS51369 LLC TRC FIORD` → `llc_fiord`).
+(например `AS51369 LLC TRC FIORD` → `llc_trc_fiord`; `normalize_provider_name`
+slug-ифицирует все слова через `_`). Персист в `config.toml [provider] name`;
+переопределить можно через env `BLOCKCHECKS_PROVIDER` или `--data-block-sync`.
+`data_block/` является git-субмодулем (см. `.git` + `store.py:3`).
