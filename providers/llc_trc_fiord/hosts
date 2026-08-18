@@ -2,20 +2,20 @@
 # Copy to C:\Windows\System32\drivers\etc\hosts on Windows.
 # Auto-refreshed by blockcheckS IP pinning; hand-editable.
 8.6.112.0	cloudflare-ech.com
-162.159.136.232	discord.com
-162.159.135.234	discord.gg
+162.159.128.233	discord.com
+162.159.136.234	discord.gg
 162.159.135.233	discordapp.com
-162.159.128.234	discordcdn.com
-209.85.233.104	googleapis.com
-64.233.161.103	googlevideo.com
+162.159.129.234	discordcdn.com
+173.194.221.147	googleapis.com
+108.177.14.103	googlevideo.com
 216.58.207.118	i.ytimg.com
 216.58.201.206	i9.ytimg.com
-64.233.165.139	play.google.com
+74.125.131.138	play.google.com
 193.0.11.51	ripe.net
-104.18.11.47	signal.org
-151.101.66.219	speedtest.net
+8.47.69.0	signal.org
+151.101.130.219	speedtest.net
 149.154.167.99	web.telegram.org
-142.251.1.91	youtu.be
+74.125.205.93	youtu.be
 108.177.14.190	youtube.com
 172.217.116.4	youtubei.googleapis.com
 142.251.142.225	yt3.googleusercontent.com
