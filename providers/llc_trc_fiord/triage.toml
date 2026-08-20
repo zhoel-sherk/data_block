@@ -1,5 +1,5 @@
 version = 1
-updated_at = "2026-08-20T03:17:08"
+updated_at = "2026-08-20T14:40:15"
 primary_domain = "discord.com"
 
 [flags]
@@ -7,7 +7,7 @@ silent_drop_after_sni = true
 rst_at_sni = false
 voice_ok = false
 udp_blocked = true
-dns_hijacked = true
+dns_hijacked = false
 dns_sinkhole = false
 ech_blocked = false
 http_blocked = false
@@ -16,8 +16,8 @@ http_blocked = false
 server_hops = 8
 
 [viable]
-foolings = ["tcp_ts=-1000", "tcp_md5", "tcp_seq=1000", "tcp_ack=-66000:tcp_ts_up"]
-blobs = ["stun", "tls_clienthello"]
+foolings = ["tcp_md5", "tcp_ack=-66000:tcp_ts_up"]
+blobs = ["stun"]
 split_mode = "disorder"
 
 [dead]
