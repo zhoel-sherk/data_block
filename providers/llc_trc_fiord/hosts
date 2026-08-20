@@ -2,7 +2,7 @@
 # Copy to C:\Windows\System32\drivers\etc\hosts on Windows.
 # Auto-refreshed by blockcheckS IP pinning; hand-editable.
 104.18.11.118	cloudflare-ech.com
-162.159.135.232	discord.com
+162.159.128.233	discord.com
 162.159.130.234	discord.gg
 162.159.134.233	discordapp.com
 162.159.138.233	discordcdn.com
