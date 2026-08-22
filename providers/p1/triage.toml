@@ -1,0 +1,23 @@
+version = 1
+updated_at = "2026-08-22T19:37:21"
+primary_domain = "discord.com"
+
+[flags]
+silent_drop_after_sni = false
+rst_at_sni = false
+voice_ok = false
+udp_blocked = false
+dns_hijacked = false
+dns_sinkhole = false
+
+[hops]
+# hops unknown
+
+[viable]
+foolings = []
+blobs = []
+split_mode = ""
+
+[dead]
+foolings = []
+notes = ["send:repeats=6 → SSL 35 on L4-checksum-normalizing DPI"]

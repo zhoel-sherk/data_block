@@ -1,6 +1,6 @@
 version = 1
-updated_at = "2026-08-22T12:46:30"
-primary_domain = "example.com"
+updated_at = "2026-08-22T23:23:45"
+primary_domain = "cdn.discordapp.com, discord.com, discord.gg, discordapp.com, dl.discordapp.net, gateway.discord.gg, images-ext-1.discordapp.net, images-ext-2.discordapp.net, latency.discord.media, media.discordapp.net, updates.discord.com"
 
 [flags]
 silent_drop_after_sni = true
@@ -9,17 +9,35 @@ voice_ok = false
 udp_blocked = true
 dns_hijacked = false
 dns_sinkhole = false
-ech_blocked = false
 http_blocked = false
 
 [hops]
-server_hops = 8
+# hops unknown
 
 [viable]
-foolings = ["tcp_ts=-1000", "tcp_md5", "badsum", "tcp_seq=1000", "tcp_ack=-66000:tcp_ts_up"]
-blobs = ["stun", "tls_clienthello"]
-split_mode = "first_byte"
+foolings = ["tcp_seq=1000", "tcp_ack=-66000:tcp_ts_up"]
+blobs = ["stun"]
+split_mode = ""
 
 [dead]
 foolings = []
 notes = ["send:repeats=6 → SSL 35 on L4-checksum-normalizing DPI"]
+
+[[cluster]]
+primary_domain = "cdn.discordapp.com, discord.com, discord.gg, discordapp.com, dl.discordapp.net, gateway.discord.gg, images-ext-1.discordapp.net, images-ext-2.discordapp.net, latency.discord.media, media.discordapp.net, updates.discord.com"
+phase = "unknown"
+l3 = "pass"
+stall = "unknown"
+quic_drop = false
+
+[[cluster]]
+primary_domain = "discordapp.net, router.discord.media, url-protection.discord.com"
+phase = "unknown"
+stall = "unknown"
+
+[[cluster]]
+primary_domain = "discordcdn.com"
+phase = "pass"
+l3 = "pass"
+stall = "pass"
+quic_drop = false
