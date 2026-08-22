@@ -1,6 +1,6 @@
 version = 1
-updated_at = "2026-08-20T14:48:00"
-primary_domain = "discord.com"
+updated_at = "2026-08-22T12:46:30"
+primary_domain = "example.com"
 
 [flags]
 silent_drop_after_sni = true
@@ -16,10 +16,10 @@ http_blocked = false
 server_hops = 8
 
 [viable]
-foolings = ["tcp_md5", "tcp_ack=-66000:tcp_ts_up"]
-blobs = ["stun"]
-split_mode = "disorder"
+foolings = ["tcp_ts=-1000", "tcp_md5", "badsum", "tcp_seq=1000", "tcp_ack=-66000:tcp_ts_up"]
+blobs = ["stun", "tls_clienthello"]
+split_mode = "first_byte"
 
 [dead]
-foolings = ["badsum", "send"]
+foolings = []
 notes = ["send:repeats=6 → SSL 35 on L4-checksum-normalizing DPI"]
